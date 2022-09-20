@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+
+<hr />
+    <div class="form-group row">
+        <label class="col-sm-3 col-form-label">Department</label>
+        <div class="col-sm-9">
+            <select id="DepartmentId" asp-items="@ViewBag.ddlDepartment" style="width: 100%;" class="form-control" required>
+            <option disabled selected>--- SELECT ---</option>
+        </select>
+        </div>
+    </div>
+
+    <hr />
+    <div class="form-group row">
+        <label class="col-sm-3 col-form-label">SubDepartment</label>
+        <div class="col-sm-9">
+            <select id="SubDepartmentId" asp-items="@ViewBag.ddlSubDepartment" style="width: 100%;" class="form-control" required>
+            <option disabled selected>--- SELECT ---</option>
+        </select>
+        </div>
+    </div>
+
+</div>
